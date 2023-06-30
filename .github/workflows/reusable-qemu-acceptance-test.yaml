@@ -1,0 +1,19 @@
+name: Reusable workflow - qemu acceptance test
+
+on:
+  workflow_call:
+    inputs:
+      flavor:
+        required: true
+        type: string
+      port:
+        required: false
+        type: string
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: test
+        run: |
+          ls
