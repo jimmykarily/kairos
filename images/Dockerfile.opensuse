@@ -36,6 +36,7 @@ RUN zypper in --force-resolution -y \
     e2fsprogs \
     fail2ban \
     findutils \
+    wireguard-tools \
     gawk \
     growpart \
     gptfdisk \
